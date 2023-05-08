@@ -1,4 +1,4 @@
-html {
+ html {
   height: 100%;
   width: 100%;
 }
@@ -115,3 +115,27 @@ footer {
   padding: 20px;
   text-align: center;
 }
+image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  order: 1;
+}
+
+img {
+  order: 2;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .text {
+    order: 2;
+  }
+
+  img {
+    order: 1;
+  }
+}
+
